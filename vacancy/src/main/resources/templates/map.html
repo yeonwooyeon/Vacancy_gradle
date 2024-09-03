@@ -7,21 +7,22 @@
 <script type="text/javascript"
 	src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=78b33a405481aa556df21c1eda9ce3ee&libraries=services"></script>
 <style>
-
 </style>
 </head>
 
 <body>
-    <div class="header">
-        <img src="../images/logo.png" alt="Vacancy Logo" class="logo">
-        <h1>공실정보</h1>
-    </div>
-    <div id="searchBox">
-        <input type="text" id="address" placeholder="주소를 입력하세요">
-        <button id="searchBtn">검색</button>
-    </div>
-    <div id="map"></div>
-    <div id="clickLatlng"></div>
+	<header>
+		<div class="header">
+			<img src="../images/logo.png" alt="Vacancy Logo" class="logo">
+			<h1>공실정보</h1>
+		</div>
+		<div id="searchBox">
+			<input type="text" id="address" placeholder="주소를 입력하세요">
+			<button id="searchBtn">검색</button>
+		</div>
+	</header>
+	<div id="map"></div>
+	<div id="clickLatlng"></div>
 
 	<script>
         var map, marker, customOverlay;     
@@ -67,7 +68,7 @@
                     var content = `
                         <div class="customoverlay">
                             <a href="https://map.kakao.com/link/map/${latlng.getLat()},${latlng.getLng()}" target="_blank">
-                                <span class="title">위도: ${latlng.getLat().toFixed(0)}, 경도: ${latlng.getLng().toFixed(0)}</span>
+                                <span class="title">위도: ${latlng.getLat().toFixed(5)}, 경도: ${latlng.getLng().toFixed(5)}</span>
                             </a>
                         </div>
                     `;

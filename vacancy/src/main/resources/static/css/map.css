@@ -11,9 +11,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #FFB74D;
 }
-
 .logo {
     height: 5em; /* 로고 크기 조정 */
     margin-right: 10px; /* 로고와 텍스트 사이의 간격 */
