@@ -8,7 +8,7 @@ public class VacancyController {
 	
 	@GetMapping("/")
     public String newfile() {
-        return "NewFile";  // map.html 템플릿을 렌더링
+        return "index";  // map.html 템플릿을 렌더링
     }
 	
 	@GetMapping("/index")
