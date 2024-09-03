@@ -18,6 +18,6 @@ public class VacancyController {
 	
 	@GetMapping("/map")
     public String map() {
-        return "map";  // map.html 템플릿을 렌더링
+        return "map2";  // map.html 템플릿을 렌더링
     }
 }
