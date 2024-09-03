@@ -9,7 +9,7 @@ public class VacancyController {
 	@GetMapping("/")
     public String newfile() {
         return "index";  // map.html 템플릿을 렌더링
-    }
+    }//asd
 	
 	@GetMapping("/index")
     public String index() {
