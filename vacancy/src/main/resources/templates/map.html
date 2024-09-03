@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>VACANCY</title>
-    <link rel="stylesheet" href="../css/map.css">
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=78b33a405481aa556df21c1eda9ce3ee&libraries=services"></script>
-   <style>
-   #map {width:750px; height:350px;}   
-   #searchBox { margin-bottom: 10px;}
-   .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
-   .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-   .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-   .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
-   .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
-   </style>
+<meta charset="UTF-8">
+<title>VACANCY</title>
+<link rel="stylesheet" href="../css/map.css">
+<script type="text/javascript"
+	src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=78b33a405481aa556df21c1eda9ce3ee&libraries=services"></script>
+<style>
+
+</style>
 </head>
 
 <body>
-    <h1>공실정보</h1>
+    <div class="header">
+        <img src="../images/logo.png" alt="Vacancy Logo" class="logo">
+        <h1>공실정보</h1>
+    </div>
     <div id="searchBox">
         <input type="text" id="address" placeholder="주소를 입력하세요">
         <button id="searchBtn">검색</button>
@@ -25,7 +23,7 @@
     <div id="map"></div>
     <div id="clickLatlng"></div>
 
-    <script>
+	<script>
         var map, marker, customOverlay;     
 
         kakao.maps.load(function() {
