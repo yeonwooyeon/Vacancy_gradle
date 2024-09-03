@@ -15,14 +15,14 @@ body {
 }
 
 .logo {
-    height: 50px; /* 로고 크기 조정 */
+    height: 5em; /* 로고 크기 조정 */
     margin-right: 10px; /* 로고와 텍스트 사이의 간격 */
 }
 
 h1 {
     color: #333;
     margin: 0;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 /* 검색 박스 스타일링 */
@@ -63,8 +63,8 @@ h1 {
 
 /* 지도 스타일링 */
 #map {
-    width: 750px;
-    height: 350px;
+    width: 900px;
+    height: 600px;
     margin: 0 auto;
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
